@@ -4,21 +4,45 @@ import { makeStyles } from '@mui/styles';
 export const NavBarStyles = makeStyles(theme =>
 ({
     boxNav: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
+        
         transition: '0.5s',
         background:'white',
+        borderBottom:'1px solid black'
         
     },
+    BarCont:{
+        display: 'flex',
+        justifyContent: 'center',
+        // alignItems: 'space-evenly',
+        height:'90px',
+        background:'white !important',
+        boxShadow:'none !important',
+        position:'relative',
+        '&:before':{
+            position:'absolute',
+            content:'""',
+            top:'0',
+            left:'230px',
+            height:'90px',
+            width:'66.5vw',
+            background:'',
+            borderBottom:'1px solid rgba(0,0,0,.1)'
+        },
+        // border:'1px solid red'
+    },
+    ToolBar:{
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
+    },
     NavLogo: {
-
+        height:'18px '
     },
     TabsNav: {
         color: 'grey',
-        marginLeft: '20px',
+        marginLeft: '30px',
         display: 'flex',
-        flexGrow: '.8',
+        flexGrow: '.3',
 
     },
 
@@ -30,20 +54,25 @@ export const NavBarStyles = makeStyles(theme =>
     },
     IconNav: {
         color: '#B8B8B8 ',
-        padding: '5px',
-        marginRight: '30px',
         cursor: 'pointer',
         '&:hover': {
-
+            
             transition: '.5s',
             color: '#585858',
-
+            
         }
     },
-    avatar: {
-
+    Badge:{
+        marginTop:'10px',
+        marginRight: '30px',
+        color:'white !important'
 
     },
+    DivAva: {
+        display:'flex',
+
+    },
+    
 
 })
 )

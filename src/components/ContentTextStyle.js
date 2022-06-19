@@ -3,20 +3,20 @@ import { makeStyles } from '@mui/styles';
 
 export const ContentTextStyle = makeStyles({
     divContentBox: {
-        width: '50vw',
-        height: '100vh',
+        width: '40vw',
+        height: '97vh',
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'start',
         alignItems: 'center',
-        flexDirection: 'column',
-
-
+        
     },
     BoxContentText: {
-        width: '400px !important',
+        width: '350px !important',
         display: 'grid',
         gridTemplateColumns: '1fr',
+        paddingTop: '50px',
         padding: '0px',
+        marginLeft:'50px',
 
 
     },
@@ -28,13 +28,14 @@ export const ContentTextStyle = makeStyles({
     },
     TypTitle: {
         fontWeight: '700 !important',
+        fontSize:'1.8rem !important',
         textTransform: 'capitalize',
         padding: '0px 0px 10px',
 
     },
     TypParagraph: {
         padding: '0px 0px 10px',
-        fontSize: '.9rem !important',
+        fontSize: '.8rem !important',
         color: 'rgba(0,0,0,.6)',
     },
     TypPrice: {

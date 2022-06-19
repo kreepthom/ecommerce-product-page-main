@@ -2,9 +2,10 @@ import React from 'react'
 
 import { Typography } from '@mui/material'
 import { Box } from '@mui/material'
+import ButtomText from './ButtomText'
 
 import {ContentTextStyle} from './ContentTextStyle'
-import ButtomText from './ButtomText'
+
 
 
 
@@ -52,8 +53,8 @@ const ContentText = () => {
 
             </Box>
 
+            
         </div>
-
 
 
     )
