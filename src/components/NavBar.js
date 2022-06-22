@@ -28,9 +28,6 @@ const ProductsNavBar = () => {
         setValueTabs(SetValue)
     }
 
-    
-
-
     return (
 
         <Box className={Class.boxNav}

@@ -13,7 +13,6 @@ export const NavBarStyles = makeStyles(theme =>
     BarCont:{
         display: 'flex',
         justifyContent: 'center',
-        // alignItems: 'space-evenly',
         height:'90px',
         background:'white !important',
         boxShadow:'none !important',
@@ -28,12 +27,13 @@ export const NavBarStyles = makeStyles(theme =>
             background:'',
             borderBottom:'1px solid rgba(0,0,0,.1)'
         },
-        // border:'1px solid red'
+        
     },
     ToolBar:{
         display:'flex',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        
     },
     NavLogo: {
         height:'18px '
