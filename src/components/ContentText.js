@@ -4,7 +4,7 @@ import { Typography } from '@mui/material'
 import { Box } from '@mui/material'
 import ButtomText from './ButtomText'
 
-import {ContentTextStyle} from './ContentTextStyle'
+import { ContentTextStyle } from './ContentTextStyle'
 
 
 
@@ -18,42 +18,46 @@ const ContentText = () => {
             <Box className={Class.BoxContentText} sx={{ width: '100%' }}>
 
                 <Typography
-                  className={Class.TypOverLine}
-                  variant='overline'
-                  >
+                    className={Class.TypOverLine}
+                    variant='overline'
+                >
                     sneakers company
                 </Typography>
 
-                <Typography 
+                <Typography
                     className={Class.TypTitle}
                     variant='h4'>
                     fall limited edition sneakers
                 </Typography>
 
                 <Typography
-                 className={Class.TypParagraph}
-                 variant='body1'>
+                    className={Class.TypParagraph}
+                    variant='body1'>
                     These low-profile sneakers are your perfect casual wear companion. Featuring a
                     durable rubber outer sole, they'll withstand everything the weather can offer.
                 </Typography>
 
-                <Typography
-                 className={Class.TypPrice}
-                 variant='h6'>
-                    $125.00
-                    <small className={Class.TypPrice2}>50%</small>
-                </Typography>
+                <div className={Class.ConttPrice}>
+                    <Typography
+                        className={Class.TypPrice}
+                        variant='h6'>
+                        $125.00
+                        <small className={Class.TypPrice2}>50%</small>
+                    </Typography>
 
-                <small className={Class.Small}>
-                    $250.00
-                </small>
+                    <small className={Class.Small}>
+                        $250.00
+                    </small>
 
-                <ButtomText/>
-               
+                </div>
+
+
+                <ButtomText />
+
 
             </Box>
 
-            
+
         </div>
 
 

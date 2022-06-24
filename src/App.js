@@ -8,11 +8,13 @@ import { useState } from 'react';
 
 function App() {
 
+  const [numImage, setNumImage] = useState(1)
   const [numShop, setNumShop] = useState(0)
+  const [plusSubs, setPlusSubs] = useState(0)
 
   return (
     <ThemeProvider theme={theme}>
-      <useShopContext.Provider value={{ numShop, setNumShop }} >
+      <useShopContext.Provider value={{ numShop, setNumShop, numImage, setNumImage , plusSubs, setPlusSubs}} >
         <ProductsNavBar />
         <Content />
       </useShopContext.Provider>

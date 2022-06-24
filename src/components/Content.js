@@ -7,13 +7,20 @@ import ModalImages from './ModalImages';
 
 import {makeStyles} from '@mui/styles'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles( theme=>({
     Content:{
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center'
+      
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+
+        [theme.breakpoints.down('md')]:{
+          // width:'100%',
+          // background:'grey',
+          display:'block'
+        }
     }
-})
+}))
 
 const Content = () => {
 
