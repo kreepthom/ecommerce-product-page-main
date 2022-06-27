@@ -11,28 +11,43 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import Badge from '@mui/material/Badge';
 import { Avatar } from '@mui/material';
 import NavBasket from './NavBasket';
+import {useTheme} from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
 
 import { useShopContext } from '../hook/useContext'
+import DrawerNav from './DrawerNav'
 
 import { NavBarStyles } from './NavBarStyle';
+
 
 // TODO: falta quitar los padding de los componentes <Tab/>
 
 const ProductsNavBar = () => {
 
+    const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.between('xs','md'))
+
     const Class = NavBarStyles()
-    const { numShop } = useContext(useShopContext)
+    const { numShop, setOpenDrawwer } = useContext(useShopContext)
     const [valueTabs, setValueTabs] = useState('one')
-    const [ handleBasket, setHandleNavBasket] = useState(false)
+    const [handleBasket, setHandleNavBasket] = useState(false)
+
 
     const handleChangeTabs = (e, SetValue) => {
 
         setValueTabs(SetValue)
     }
-
-    const handleNavBasket = ()=>{
+   
+    const handleNavBasket = () => {
         setHandleNavBasket(!handleBasket)
     }
+
+    const handleOpenDrawer = () => {
+        setOpenDrawwer(true)
+    }
+
+   
+    console.log(matches)
 
     return (
 
@@ -48,6 +63,7 @@ const ProductsNavBar = () => {
                         className={Class.IconMenu}
                         component={MenuIcon}
                         inheritViewBox
+                        onClick={handleOpenDrawer}
                     />
 
                     <img
@@ -86,7 +102,7 @@ const ProductsNavBar = () => {
                         >
                         </SvgIcon>
 
-                        { handleBasket && <NavBasket/>}
+                        {handleBasket && <NavBasket />}
                     </Badge>
 
                     <Avatar
@@ -96,6 +112,10 @@ const ProductsNavBar = () => {
                 </div>
 
             </Toolbar>
+
+            {
+               matches && <DrawerNav />
+            }
         </AppBar>
 
 
