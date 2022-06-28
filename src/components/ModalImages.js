@@ -53,7 +53,7 @@ const ModalImages = ({openModal = false,setOpenModal}) => {
                         <SvgIcon onClick={handleClose} className={Class.CloseIcon} component={CloseIcon} />
                         <SvgIcon onClick={handleModalBack} className={Class.BackIcon} component={ChevronLeftIcon} />
                         <SvgIcon onClick={handleModalNext} className={Class.NextIcon} component={ChevronRightIcon} />
-                        <img className={Class.ImageMain} src={`/images/image-product-${numImage}.jpg`} alt="Shoes" >
+                        <img className={Class.ImageMain} src={`images/image-product-${numImage}.jpg`} alt="Shoes" >
                     </img>
 
                     </div>
@@ -61,14 +61,6 @@ const ModalImages = ({openModal = false,setOpenModal}) => {
                     <Box className={Class.ContImgThumb} component='div'>
                         {
                             NumImage.map(Num => (
-
-                                // <img
-                                //     onClick={() => handleImageMain(Num)}
-                                //     className={Class.ImageThumbnail}
-                                //     key={Num}
-                                //     src={`images/image-product-${Num}-thumbnail.jpg`}
-                                //     alt="Shoes"
-                                // />
                                 <CardMedia
                                     onClick={() => handleImageMain(Num)}
                                     key={Num}

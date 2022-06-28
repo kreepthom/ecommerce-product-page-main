@@ -68,7 +68,7 @@ const ProductsNavBar = () => {
 
                     <img
                         className={Class.NavLogo}
-                        src="/images/logo.svg"
+                        src="images/logo.svg"
                         alt="Sneakers"
                     />
                 </div>
@@ -107,7 +107,7 @@ const ProductsNavBar = () => {
 
                     <Avatar
                         className={Class.avatar}
-                        src='/images/image-avatar.png'
+                        src='images/image-avatar.png'
                         alt='aPerson' />
                 </div>
 

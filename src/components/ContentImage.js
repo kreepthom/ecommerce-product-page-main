@@ -49,7 +49,7 @@ const ContentImage = () => {
                     <img 
                         onDoubleClick={handleModal} 
                         className={Class.ImageMain} 
-                        src={`/images/image-product-${numImage}.jpg`} 
+                        src={`images/image-product-${numImage}.jpg`} 
                         alt="Shoes" 
                     />
 

@@ -15,8 +15,6 @@ const useStyles = makeStyles( theme=>({
       alignItems:'center',
 
         [theme.breakpoints.down('md')]:{
-          // width:'100%',
-          // background:'grey',
           display:'block'
         }
     }
