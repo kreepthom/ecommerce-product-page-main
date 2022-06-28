@@ -27,6 +27,20 @@ const ContentImage = () => {
         setOpenModal(true)
     }
 
+    const handleModalNext = () =>{
+        setNumImage(numImage+1)
+        if(numImage === 4){
+            setNumImage(1)
+        }
+    }
+    
+    const handleModalBack = ()=>{
+        setNumImage(numImage-1)
+        if(numImage === (1)){
+            setNumImage(4)
+        }
+    }
+
     return (
         <Box
             className={Class.ContainerMain}
@@ -37,12 +51,12 @@ const ContentImage = () => {
                 <div className={Class.DivImage}>
                     
                     <SvgIcon 
-                        onClick={'handleModalBack'}
+                        onClick={handleModalBack}
                         className={Class.BackIcon} 
                         component={ChevronLeftIcon}
                      />
                     <SvgIcon 
-                        onClick={'handleModalNext'}  
+                        onClick={handleModalNext}  
                         className={Class.NextIcon} 
                         component={ChevronRightIcon} 
                     />

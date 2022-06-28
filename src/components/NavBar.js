@@ -46,9 +46,6 @@ const ProductsNavBar = () => {
         setOpenDrawwer(true)
     }
 
-   
-    console.log(matches)
-
     return (
 
 
@@ -56,9 +53,7 @@ const ProductsNavBar = () => {
 
             <Toolbar className={Class.ToolBar}>
                 <div className={Class.DivLogoMenu}>
-                    {/* <IconButton className={Class.IconMenu}>
-                        <MenuIcon />
-                    </IconButton> */}
+            
                     <SvgIcon
                         className={Class.IconMenu}
                         component={MenuIcon}

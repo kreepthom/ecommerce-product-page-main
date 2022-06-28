@@ -176,15 +176,20 @@ export const NavBarStyles = makeStyles(theme =>
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        boxShadow: '0px 10px 20px rgba(0,0,0,.3)'
+        boxShadow: '0px 10px 20px rgba(0,0,0,.3)',
 
+        [theme.breakpoints.only('xs')]: {
+            
+            top: '40px',
+            left: '-200px',
+        }
     },
 
     tiltleBasket: {
 
         textTransform: 'capitalize',
-        fontSize:'15px',
-        fontWeight:'600 ',
+        fontSize: '15px',
+        fontWeight: '600 ',
         color: 'black',
         width: '96%',
         paddingLeft: '40px',
@@ -192,8 +197,8 @@ export const NavBarStyles = makeStyles(theme =>
         borderBottom: '1px solid rgba(0,0,0,.1)',
         display: 'flex',
         alignItems: 'start',
-        
-        '&:hover':{
+
+        '&:hover': {
             transition: '.5s',
             color: 'hsl(26, 100%, 55%) !important',
 
@@ -204,7 +209,7 @@ export const NavBarStyles = makeStyles(theme =>
     DivBasket: {
 
         display: 'flex',
-        gap: '10px'
+        gap: '10px',
 
     },
     DivIcon: {
@@ -243,7 +248,7 @@ export const NavBarStyles = makeStyles(theme =>
         color: 'rgba(0,0,0,.4)',
         fontSize: '10px',
 
-        '&:hover':{
+        '&:hover': {
             transition: '.5s',
             color: 'hsl(26, 100%, 55%) !important',
 
@@ -253,13 +258,13 @@ export const NavBarStyles = makeStyles(theme =>
     Checkout: {
 
         textTransform: 'capitalize !important',
-        color:'white !important',
-        fontWeight:'600 !important',
+        color: 'white !important',
+        fontWeight: '600 !important',
         marginTop: '20px !important',
         width: '250px ',
         background: 'hsl(26, 100%, 55%) !important',
 
-        '&:hover':{
+        '&:hover': {
             background: 'hsl(25, 100%, 65%) !important',
 
         }
