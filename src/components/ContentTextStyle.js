@@ -9,6 +9,7 @@ export const ContentTextStyle = makeStyles(theme =>({
         display: 'flex',
         justifyContent: 'start',
         alignItems: 'center',
+        fontFamily: 'Kumbh Sans, sans-serif',
 
         [theme.breakpoints.only('sm')]:{
 
@@ -127,8 +128,9 @@ export const ContentTextStyle = makeStyles(theme =>({
 
     TypPrice2: {
 
+        fontFamily: 'Kumbh Sans, sans-serif',
         fontSize: '12px',
-        fontWeight: '600 !important',
+        fontWeight: '400 !important',
         background: 'hsl(25, 100%, 94%)',
         margin: ' 0px 0px 0px 10px',
         color: 'hsl(26, 100%, 55%)',

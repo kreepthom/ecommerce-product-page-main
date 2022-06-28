@@ -8,7 +8,7 @@ export const theme = createTheme({
     },
     palette: {
         primary: {
-            main: '#000'
+            main: 'hsl(26, 100%, 55%)'
         },
         info: {
             main: 'hsl(26, 100%, 55%)',
@@ -16,9 +16,6 @@ export const theme = createTheme({
         Badge: {
             main: 'hsl(26, 100%, 55%)',
         },
-        // error:{
-        //     light:'hsl(26, 100%, 55%)',
-        //     // main:'hsl(26, 100%, 55%)'
-        // }
+
     },
 })

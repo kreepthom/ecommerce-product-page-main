@@ -165,6 +165,7 @@ export const NavBarStyles = makeStyles(theme =>
 
     NavBasket: {
 
+        fontFamily: 'Kumbh Sans, sans-serif',
         borderRadius: '5px',
         transition: '.5s',
         width: '300px',
@@ -209,7 +210,22 @@ export const NavBarStyles = makeStyles(theme =>
     DivBasket: {
 
         display: 'flex',
+        justifyContent:'center',
+        alignItems:'center',
         gap: '10px',
+
+    },
+    divEmpty:{
+        width:'200px     ',
+        height:'40px',
+        textAlign:'center',
+    },
+
+    titleEmpty:{
+        color: 'rgba(0,0,0,.8)',
+        textTransform:'capitalize',
+        margin:'20px 0px  ',
+
 
     },
     DivIcon: {
@@ -231,7 +247,7 @@ export const NavBarStyles = makeStyles(theme =>
 
     textBasket: {
 
-        color: 'black',
+        color: 'rgba(0,0,0,.8)',
         width: '180px',
         textTransform: 'capitalize',
         fontSize: '.8rem !important'

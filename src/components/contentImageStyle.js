@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 export const useContentImagesStyles = makeStyles(theme => ({
 
     ContainerMain: {
-        
+
         [theme.breakpoints.only('lg')]: {
 
             paddingTop: '40px',
@@ -22,7 +22,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
         },
 
         [theme.breakpoints.only('sm')]: {
-            
+
             width: '100%',
             height: '400px',
             display: 'flex',
@@ -32,7 +32,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
 
         [theme.breakpoints.only('xs')]: {
 
-            paddingTop:'50px',
+            paddingTop: '50px',
             width: '100%',
             background: 'orange !important',
             height: '300px !important',
@@ -41,7 +41,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
     },
     ContainerImage: {
 
-        [theme.breakpoints.only('lg')]:{
+        [theme.breakpoints.only('lg')]: {
 
             paddingTop: '70px',
             width: '400px !important',
@@ -52,7 +52,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
             flexDirection: 'column',
         },
 
-        [theme.breakpoints.only('md')]:{
+        [theme.breakpoints.only('md')]: {
 
             paddingTop: '50px',
             width: '400px !important',
@@ -64,8 +64,8 @@ export const useContentImagesStyles = makeStyles(theme => ({
         },
 
         [theme.breakpoints.only('sm')]: {
-            
-            marginTop:'120px',
+
+            marginTop: '120px',
             width: '90% ',
             height: '400px !important',
             display: 'flex',
@@ -81,30 +81,31 @@ export const useContentImagesStyles = makeStyles(theme => ({
 
     },
     DivImage: {
-        
+
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: '10px',
-        
+        // border:'1px solid black',
+
         [theme.breakpoints.only('md')]: {
-            
+
             height: '300px',
             width: '100%',
             position: 'relative',
         },
 
-        [theme.breakpoints.only('sm')]:{
-            width:'500px',
+        [theme.breakpoints.only('sm')]: {
+            width: '500px',
             height: '350px',
-            position:'relative'
+            position: 'relative'
         },
 
-        [theme.breakpoints.only('xs')]:{
-        
-            width:'100%',
+        [theme.breakpoints.only('xs')]: {
+
+            width: '100%',
             height: '300px',
-            background:'red ',
+            background: 'red ',
             marginBottom: '0px',
         },
 
@@ -130,15 +131,15 @@ export const useContentImagesStyles = makeStyles(theme => ({
 
         [theme.breakpoints.only('sm')]: {
 
-            width:'500px',
+            width: '500px',
             height: '350px',
             borderRadius: '12px ',
         },
 
         [theme.breakpoints.only('xs')]: {
-    
+
             height: '300px',
-            width:'100%',
+            width: '100%',
             borderRadius: '0px',
         }
 
@@ -185,8 +186,9 @@ export const useContentImagesStyles = makeStyles(theme => ({
         padding: '8px',
         borderRadius: '50%',
 
-        '&:hover':{
+        '&:hover': {
             color: 'hsl(26, 100%, 55%) !important',
+
         },
 
         [theme.breakpoints.down('md')]: {
@@ -196,10 +198,20 @@ export const useContentImagesStyles = makeStyles(theme => ({
 
         [theme.breakpoints.only('sm')]: {
 
-            background: 'rgba(100,100,100,.5)',
-            top: '160px',
+            background: '#fff',
+            border: '2px solid transparent',
+            top: '50% !important',
             left: '-20px',
             padding: '10px',
+
+            '&:hover': {
+                transition: '.3s',
+                border: '2px solid hsl(26, 100%, 70%)',
+                opacity: '.95'
+            }
+        },
+        [theme.breakpoints.only('xs')]: {
+            top: '35% !important'
         }
     },
     NextIcon: {
@@ -211,10 +223,11 @@ export const useContentImagesStyles = makeStyles(theme => ({
         cursor: 'pointer',
         color: 'rgba(0,0,0,.9)',
         padding: '8px',
-        background: 'white',
+        background: '#fff',
         borderRadius: '50%',
 
-        '&:hover':{
+        '&:hover': {
+    
             color: 'hsl(26, 100%, 55%) !important',
         },
 
@@ -225,11 +238,19 @@ export const useContentImagesStyles = makeStyles(theme => ({
 
         [theme.breakpoints.only('sm')]: {
 
-            background: 'rgba(100,100,100,.5)',
-            display: 'block !important',
-            top: '160px',
+            background: '#fff',
+            border: '2px solid transparent',
+            top: '50% !important',
             right: '-20px',
             padding: '10px',
+            '&:hover': {
+                transition: '.3s',
+                border: '2px solid hsl(26, 100%, 70%)',
+                opacity: '.95'
+            }
+        },
+        [theme.breakpoints.only('xs')]: {
+            top: '35% !important'
         }
     },
 }))
