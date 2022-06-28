@@ -211,7 +211,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
             }
         },
         [theme.breakpoints.only('xs')]: {
-            top: '35% !important'
+            top: '25% !important'
         }
     },
     NextIcon: {
@@ -250,7 +250,7 @@ export const useContentImagesStyles = makeStyles(theme => ({
             }
         },
         [theme.breakpoints.only('xs')]: {
-            top: '35% !important'
+            top: '25% !important'
         }
     },
 }))
